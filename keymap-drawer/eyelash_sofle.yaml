@@ -62,7 +62,7 @@ layers:
   - Ctl+Alt+Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
-  - '&key_repeat'
+  - Ctl+Alt+$$mdi:apple-keyboard-command$$
   - $$mdi:alpha-w-box$$
   - $$mdi:backspace-reverse-outline$$
   layer1:
