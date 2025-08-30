@@ -211,11 +211,11 @@
 
         layer0 {
             bindings = <
-&gresc_td      &kp N1          &kp N2         &kp N3            &kp N4        &kp N5         &kp LS(LC(TAB))        &kp N6                &kp N7        &kp N8             &kp N9         &kp N0               &TD_topRight
-&kp TAB        &kp Q           &kp W          &kp L             &kp D         &kp G          &kp LC(TAB)            &kp J                 &kp F         &kp O              &kp U          &kp SEMI             &kp BSLH
-&kp BACKSPACE  &mt_l LSHIFT N  &mt_l LCTRL S  &mt_l LEFT_ALT R  &mt_l LGUI T  &kp P          &kp LS(TAB)            &kp Y                 &mt_r RGUI H  &mt_r RIGHT_ALT E  &mt_r RCTRL I  &mt_r RIGHT_SHIFT A  &kp SQT
-&kp LSHFT      &kp Z           &kp X          &kp C             &kp V         &kp B          &kp TAB                &kp K                 &kp M         &kp COMMA          &kp DOT        &kp FSLH             &kp RSHFT
-&mo 2          &kp LCTRL       &kp LEFT_ALT   &kp LEFT_GUI      &lt 2 SPACE   &lt 3 ENTER    &kp LC(LA(LG(SPACE)))  &mt LEFT_SHIFT ENTER  &lt 1 SPACE   &key_repeat        &caps_word     &kp DELETE
+&gresc_td      &kp N1          &kp N2         &kp N3            &kp N4        &kp N5         &kp LS(LC(TAB))        &kp N6                &kp N7        &kp N8                &kp N9         &kp N0               &TD_topRight
+&kp TAB        &kp Q           &kp W          &kp L             &kp D         &kp G          &kp LC(TAB)            &kp J                 &kp F         &kp O                 &kp U          &kp SEMI             &kp BSLH
+&kp BACKSPACE  &mt_l LSHIFT N  &mt_l LCTRL S  &mt_l LEFT_ALT R  &mt_l LGUI T  &kp P          &kp LS(TAB)            &kp Y                 &mt_r RGUI H  &mt_r RIGHT_ALT E     &mt_r RCTRL I  &mt_r RIGHT_SHIFT A  &kp SQT
+&kp LSHFT      &kp Z           &kp X          &kp C             &kp V         &kp B          &kp TAB                &kp K                 &kp M         &kp COMMA             &kp DOT        &kp FSLH             &kp RSHFT
+&mo 2          &kp LCTRL       &kp LEFT_ALT   &kp LEFT_GUI      &lt 2 SPACE   &lt 3 ENTER    &kp LC(LA(LG(SPACE)))  &mt LEFT_SHIFT ENTER  &lt 1 SPACE   &kp LC(LA(LEFT_GUI))  &caps_word     &kp DELETE
             >;
 
             sensor-bindings = <&scroll_encoder>;
