@@ -229,7 +229,7 @@
             bindings = <
 &TH_Gresc_ForceQuit 0 0  &kp N1              &kp N2                &kp N3            &kp N4                &kp N5         &kp LS(LC(TAB))  &kp N6                 &kp N7                 &kp N8                    &kp N9                 &kp N0               &Del_ejectAll 0 DELETE
 &kp TAB                  &kp Q               &kp W                 &kp L             &kp D                 &kp G          &kp LC(TAB)      &kp J                  &kp F                  &kp O                     &kp U                  &kp SEMICOLON        &kp NON_US_BACKSLASH
-&kp CAPS                 &mt_L LEFT_SHIFT N  &mt_L LEFT_CONTROL S  &mt_L LEFT_ALT R  &mt_L LEFT_COMMAND T  &kp P          &kp TILDE        &kp Y                  &mt_R RIGHT_COMMAND H  &mt_R RIGHT_ALT E         &mt_R RIGHT_CONTROL I  &mt_R RIGHT_SHIFT A  &kp APOS
+&kp BACKSPACE            &mt_L LEFT_SHIFT N  &mt_L LEFT_CONTROL S  &mt_L LEFT_ALT R  &mt_L LEFT_COMMAND T  &kp P          &kp TILDE        &kp Y                  &mt_R RIGHT_COMMAND H  &mt_R RIGHT_ALT E         &mt_R RIGHT_CONTROL I  &mt_R RIGHT_SHIFT A  &kp APOS
 &kp LSHFT                &kp Z               &kp X                 &kp C             &kp V                 &kp B          &kp TAB          &kp K                  &kp M                  &kp COMMA                 &kp DOT                &kp FSLH             &kp LS(LA(LC(LEFT_COMMAND)))
 &mo 2                    &kp LCTRL           &kp LEFT_GUI          &kp LEFT_ALT      &lt 2 SPACE           &lt 3 ENTER    &kp ENTER        &mt LEFT_SHIFT RETURN  &lt 1 SPACE            &kp LC(LA(LEFT_COMMAND))  &kp LS(LC(LEFT_ALT))   &TH_Caps CAPS 0
             >;
@@ -253,11 +253,11 @@
 
         Nav {
             bindings = <
-&kp ESC    &trans     &trans     &trans     &trans     &trans    &kp UP_ARROW    &trans     &trans        &trans    &trans         &trans        &del_scrnSvr 0 DELETE
-&trans     &trans     &trans     &trans     &trans     &trans    &kp DOWN_ARROW  &kp PG_UP  &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp DEL
-&kp GLOBE  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans    &kp LEFT_ARROW  &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LBRC      &kp BSPC
-&kp CAPS   &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp RIGHT       &trans     &kp HOME      &none     &kp END        &none         &trans
-&trans     &trans     &trans     &trans     &trans     &trans    &kp ENTER       &trans     &trans        &trans    &trans         &trans
+&kp ESC    &trans     &trans     &trans     &trans     &trans    &kp UP_ARROW    &trans     &trans         &trans    &trans         &trans        &del_scrnSvr 0 DELETE
+&trans     &trans     &trans     &trans     &trans     &trans    &kp DOWN_ARROW  &kp PG_UP  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp DEL
+&kp GLOBE  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans    &kp LEFT_ARROW  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp LBRC      &kp BSPC
+&kp CAPS   &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp RIGHT       &trans     &kp HOME       &none     &kp END        &none         &trans
+&trans     &trans     &trans     &trans     &trans     &trans    &kp ENTER       &trans     &kp BACKSPACE  &trans    &trans         &trans
             >;
 
             display-name = "layer_2";
