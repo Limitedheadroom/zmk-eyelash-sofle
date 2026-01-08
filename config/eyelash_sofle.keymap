@@ -37,6 +37,63 @@
         tap-ms = <100>;
     };
 
+    mt_l: mt_l {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MT_L";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <150>;
+        flavor = "balanced";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <59 60 7 8 9 10 11 25 24 23 22 21 20 24 33 34 35 36 37 46 47 48 49 50 38>;
+    };
+
+    mt_r: mt_r {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MT_R";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick-tap-ms = <175>;
+        require-prior-idle-ms = <150>;
+        flavor = "balanced";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 41 42 43 44 40 56 57>;
+    };
+
+    TH_Caps: TH_Caps {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TH_CAPS";
+        bindings = <&kp>, <&caps_word>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+    };
+
+    Scroll_Encoder: Scroll_Encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "SCROLL_ENCODER";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+        tap-ms = <100>;
+    };
+
+    TH_Gresc_ForceQuit: TH_Gresc_ForceQuit {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TH_GRESC_FORCEQUIT";
+        bindings = <&M_ForceQuit>, <&gresc>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <350>;
+        flavor = "tap-preferred";
+    };
+
     behaviors {
     };
 
@@ -50,19 +107,58 @@
     };
 
     macros {
-        SHIFT_MCLK: SHIFT_MCLK {
+        M_ForceQuit: M_ForceQUit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT>,
+                <&kp LEFT_GUI &kp LEFT_ALT>,
                 <&macro_press>,
-                <&mkp MB3>,
-                <&macro_pause_for_release>,
+                <&kp ESCAPE>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &mkp MB3>;
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp LEFT_GUI &kp LEFT_ALT>;
 
-            label = "SHIFT_MCLK";
+            label = "M_FORCEQUIT";
+        };
+
+        M_EjectAll: M_EjectAll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 300>,
+                <&kp E &kp J &kp E &kp C &kp T &kp SPACE &kp A &kp L &kp L>,
+                <&macro_wait_time 250>,
+                <&macro_tap>,
+                <&kp ENTER>;
+
+            label = "M_EJECTALL";
+        };
+
+        M_LockScreen: M_LockScreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>,
+                <&macro_wait_time 300>,
+                <&kp L &kp O &kp C &kp K &kp SPACE &kp S &kp C &kp R &kp E &kp E &kp N>,
+                <&macro_wait_time 250>,
+                <&macro_tap>,
+                <&kp ENTER>;
+
+            label = "M_LOCKSCREEN";
         };
     };
 
@@ -71,11 +167,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
-&kp CAPS    &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&TH_Gresc_ForceQuit 0 0  &kp N1            &kp N2              &kp N3          &kp N4              &kp N5         &kp UP_ARROW     &kp N6                 &kp N7               &kp N8           &kp N9               &kp N0             &kp BACKSPACE
+&kp TAB                  &kp Q             &kp W               &kp L           &kp D               &kp G          &kp DOWN_ARROW   &kp J                  &kp F                &kp O            &kp U                &kp SEMICOLON      &kp NON_US_BACKSLASH
+&kp CAPS                 &mt LEFT_SHIFT N  &mt LEFT_CONTROL S  &mt LEFT_ALT R  &mt LEFT_COMMAND T  &kp P          &kp LEFT_ARROW   &kp Y                  &mt RIGHT_COMMAND H  &mt RIGHT_ALT E  &mt RIGHT_CONTROL I  &mt RIGHT_SHIFT A  &kp APOS
+&kp LSHFT                &kp Z             &kp X               &kp C           &kp V               &kp B          &kp RIGHT_ARROW  &kp K                  &kp M                &kp COMMA        &kp DOT              &kp FSLH           &kp ENTER
+&kp C_MUTE               &kp LCTRL         &kp LEFT_GUI        &kp LEFT_ALT    &lt 2 SPACE         &lt 3 ENTER    &kp ENTER        &mt LEFT_SHIFT RETURN  &lt 1 SPACE          &mo 2            &kp RIGHT_SHIFT      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -135,5 +231,3 @@
         };
     };
 };
-
-
