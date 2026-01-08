@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  layer_0:
+  Alpha:
   - {t: '$$mdi:keyboard-esc$$', h: '&M_ForceQuit', s: '`'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -53,19 +53,19 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - Meh+$$mdi:apple-keyboard-command$$
-  - layer_2
+  - Nav
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: layer_2}
-  - {t: '$$mdi:keyboard-return$$', h: layer_3}
+  - {t: '$$mdi:keyboard-space$$', h: Nav}
+  - {t: '$$mdi:keyboard-return$$', h: NumPad}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: layer_1}
+  - {t: '$$mdi:keyboard-space$$', h: SymNum}
   - Ctl+Alt+$$mdi:apple-keyboard-command$$
   - Sft+Ctl+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-caps$$'}
-  layer_1:
+  SymNum:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -125,12 +125,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: 'Gui+$$mdi:keyboard-return$$', h: layer_4}
+  - {t: 'Gui+$$mdi:keyboard-return$$', h: Escape}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer_2:
+  Nav:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer_3:
+  NumPad:
   - $$mdi:keyboard-esc$$
   - Sft+!
   - {t: '1', s: '!'}
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', s: +}
-  layer_4:
+  Escape:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
