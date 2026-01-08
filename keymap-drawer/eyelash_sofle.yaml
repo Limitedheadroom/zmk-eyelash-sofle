@@ -55,8 +55,8 @@ layers:
   - Meh+$$mdi:apple-keyboard-command$$
   - Nav
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: '$$mdi:keyboard-return$$', h: NumPad}
   - {t: '$$mdi:keyboard-return$$', type: enter}
