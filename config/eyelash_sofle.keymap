@@ -225,7 +225,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Alpha {
+        layer_0 {
             bindings = <
 &TH_Gresc_ForceQuit 0 0  &kp N1              &kp N2                &kp N3            &kp N4                &kp N5         &kp LS(LC(TAB))  &kp N6                 &kp N7                 &kp N8                    &kp N9                 &kp N0               &Del_ejectAll 0 DELETE
 &kp TAB                  &kp Q               &kp W                 &kp L             &kp D                 &kp G          &kp LC(TAB)      &kp J                  &kp F                  &kp O                     &kp U                  &kp SEMICOLON        &kp NON_US_BACKSLASH
@@ -235,10 +235,10 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            display-name = "layer_0";
+            display-name = "Alpha";
         };
 
-        SymNum {
+        layer_1 {
             bindings = <
 &kp GRAVE   &kp F1        &kp F2        &kp F3     &kp F4        &kp F5           &mmv MOVE_UP     &kp F6            &kp F7             &kp F8         &kp F9        &kp F10        &kp F11
 &trans      &kp NUMBER_1  &kp NUMBER_2  &kp N3     &kp N4        &kp N5           &mmv MOVE_DOWN   &kp N6            &kp N7             &kp N8         &kp N9        &kp N0         &kp F12
@@ -247,11 +247,11 @@
 &kp C_MUTE  &trans        &trans        &trans     &trans        &trans           &mkp LCLK        &lt 4 LG(ENTER)   &trans             &trans         &trans        &trans
             >;
 
-            display-name = "layer_1";
+            display-name = "SymNum";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        Nav {
+        layer_2 {
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans     &trans    &kp UP_ARROW    &trans     &trans         &trans    &trans         &trans        &del_scrnSvr 0 DELETE
 &trans     &trans     &trans     &trans     &trans     &trans    &kp DOWN_ARROW  &kp PG_UP  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp DEL
@@ -260,11 +260,11 @@
 &trans     &trans     &trans     &trans     &trans     &trans    &kp ENTER       &trans     &kp BACKSPACE  &trans    &trans         &trans
             >;
 
-            display-name = "layer_2";
+            display-name = "Nav";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        NumPad {
+        layer_3 {
             bindings = <
 &kp ESC         &kp LS(EXCL)   &kp N1         &trans            &trans                &trans                   &trans  &trans                &trans           &trans           &trans           &trans      &del_scrnSvr 0 DELETE
 &kp TAB         &kp EXCL       &kp AT         &kp LS(NUMBER_3)  &kp DOLLAR            &kp HASH                 &kp N5  &kp LS(GREATER_THAN)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans      &trans
@@ -273,11 +273,11 @@
 &trans          &trans         &trans         &trans            &kp SPACE             &trans                   &trans  &kp KP_ENTER          &kp SPACE        &trans           &trans           &kp EQUAL
             >;
 
-            display-name = "layer_3";
+            display-name = "NumPad";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Escape {
+        layer_4 {
             bindings = <
 &kp ESC  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -286,7 +286,7 @@
 &trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            display-name = "layer_4";
+            display-name = "Escape";
             sensor-bindings = <&scroll_encoder>;
         };
 
