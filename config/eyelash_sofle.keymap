@@ -32,6 +32,8 @@
     flavor = "balanced";
 };
 
+&gresc { keep-mods = <(MOD_LSFT|MOD_LGUI|MOD_RSFT|MOD_RGUI)>; };
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -67,7 +69,7 @@
         bindings = <&M_ForceQuit>, <&gresc>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <350>;
+        tapping-term-ms = <400>;
         flavor = "tap-preferred";
     };
 
@@ -193,7 +195,7 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 400>,
                 <&kp E &kp J &kp E &kp C &kp T &kp SPACE &kp A &kp L &kp L>,
                 <&macro_wait_time 250>,
                 <&macro_tap>,
@@ -212,7 +214,7 @@
                 <&kp SPACE>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 400>,
                 <&kp L &kp O &kp C &kp K &kp SPACE &kp S &kp C &kp R &kp E &kp E &kp N>,
                 <&macro_wait_time 250>,
                 <&macro_tap>,
