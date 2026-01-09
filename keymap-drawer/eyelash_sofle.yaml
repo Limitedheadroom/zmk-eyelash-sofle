@@ -33,7 +33,7 @@ layers:
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-command$$'}
   - P
-  - '~'
+  - {t: '`', s: '~'}
   - Y
   - {t: H, h: '$$mdi:apple-keyboard-command$$'}
   - {t: E, h: '$$mdi:apple-keyboard-option$$'}
