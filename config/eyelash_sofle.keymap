@@ -166,6 +166,11 @@
             bindings = <&kp LG(A)>;
             key-positions = <51 37>;
         };
+
+        ForceQuit {
+            bindings = <&M_ForceQuit>;
+            key-positions = <0 12>;
+        };
     };
 
     macros {
