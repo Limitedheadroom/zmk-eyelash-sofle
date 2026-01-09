@@ -407,3 +407,5 @@ combos:
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [51, 37]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
+- p: [0, 12]
+  k: '&M_ForceQuit'
