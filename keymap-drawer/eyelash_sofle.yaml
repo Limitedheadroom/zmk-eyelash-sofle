@@ -26,7 +26,7 @@ layers:
   - O
   - U
   - {t: ;, s: ':'}
-  - \
+  - {t: \, h: 'Gui+$$mdi:keyboard-esc$$', s: '|'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: '$$mdi:keyboard-return$$', h: NumPad}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Ctl+Alt+Gui+$$mdi:keyboard-space$$
   - {t: RETURN, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: SymNum}
   - Ctl+Alt+$$mdi:apple-keyboard-command$$
