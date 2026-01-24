@@ -251,11 +251,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1        &kp F2        &kp F3     &kp F4        &kp F5           &mmv MOVE_UP     &kp F6            &kp F7             &kp F8         &kp F9        &kp F10        &kp F11
-&trans      &kp NUMBER_1  &kp NUMBER_2  &kp N3     &kp N4        &kp N5           &mmv MOVE_DOWN   &kp N6            &kp N7             &kp N8         &kp N9        &kp N0         &kp F12
-&trans      &kp LS(EXCL)  &kp LS(AT)    &kp N3     &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_LEFT   &kp LS(CARET)     &kp LS(AMPS)       &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp LS(PIPE)
-&trans      &kp LS(PLUS)  &kp MINUS     &kp EQUAL  &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp COLON     &kp BACKSLASH  &kp LS(UNDERSCORE)
-&kp C_MUTE  &trans        &trans        &trans     &trans        &trans           &mkp LCLK        &lt 4 LG(ENTER)   &trans             &trans         &trans        &trans
+&kp GRAVE   &kp F1        &kp F2        &kp F3      &kp F4        &kp F5           &mmv MOVE_UP     &kp F6            &kp F7             &kp F8         &kp F9        &kp F10        &kp F11
+&trans      &kp NUMBER_1  &kp NUMBER_2  &kp N3      &kp N4        &kp N5           &mmv MOVE_DOWN   &kp N6            &kp N7             &kp N8         &kp N9        &kp N0         &kp F12
+&trans      &kp LS(EXCL)  &kp LS(AT)    &kp LS(N3)  &kp LS(DLLR)  &kp LS(PRCNT)    &mmv MOVE_LEFT   &kp LS(CARET)     &kp LS(AMPS)       &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp LS(PIPE)
+&trans      &kp LS(PLUS)  &kp MINUS     &kp EQUAL   &kp LS(LBRC)  &kp LS(RBRC)     &mmv MOVE_RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp COLON     &kp BACKSLASH  &kp LS(UNDERSCORE)
+&kp C_MUTE  &trans        &trans        &trans      &trans        &trans           &mkp LCLK        &lt 4 LG(ENTER)   &trans             &trans         &trans        &trans
             >;
 
             display-name = "SymNum";
@@ -265,8 +265,8 @@
         layer_2 {
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans     &trans    &kp UP_ARROW    &trans     &trans         &trans    &trans         &trans        &Del_ejectAll 0 DELETE
-&trans     &trans     &trans     &trans     &trans     &trans    &kp DOWN_ARROW  &kp PG_UP  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp DEL
-&kp GLOBE  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans    &kp LEFT_ARROW  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp LBRC      &kp BSPC
+&trans     &trans     &trans     &trans     &trans     &trans    &kp DOWN_ARROW  &kp PG_UP  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp BACKSPACE
+&kp GLOBE  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans    &kp LEFT_ARROW  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp LBRC      &kp RIGHT_BRACE
 &kp CAPS   &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp RIGHT       &trans     &kp HOME       &none     &kp END        &none         &trans
 &trans     &trans     &trans     &trans     &trans     &trans    &kp ENTER       &trans     &kp BACKSPACE  &trans    &trans         &trans
             >;
