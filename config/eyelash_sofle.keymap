@@ -272,7 +272,7 @@
             >;
 
             display-name = "Nav";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         layer_3 {
