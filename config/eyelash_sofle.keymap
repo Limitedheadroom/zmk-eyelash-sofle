@@ -277,11 +277,11 @@
 
         layer_3 {
             bindings = <
-&kp ESC         &kp LS(EXCL)   &kp N1         &trans            &trans                &trans                   &trans  &trans                &trans           &trans           &trans           &trans      &del_scrnSvr 0 DELETE
-&kp TAB         &kp EXCL       &kp AT         &kp LS(NUMBER_3)  &kp DOLLAR            &kp HASH                 &kp N5  &kp LS(GREATER_THAN)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans      &trans
-&kp BSPC        &kp KP_DIVIDE  &kp ASTERISK   &kp MINUS         &kp PLUS              &kp PERCENT              &trans  &kp LS(LESS_THAN)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &trans
-&kp LEFT_SHIFT  &kp CARET      &kp AMPERSAND  &none             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp LS(KP_NUMBER_0)   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT  &trans
-&trans          &trans         &trans         &trans            &kp SPACE             &trans                   &trans  &kp KP_ENTER          &kp SPACE        &trans           &trans           &kp EQUAL
+&kp ESC         &kp LS(EXCL)   &kp N1         &trans            &trans                &trans                   &trans                 &trans                &trans           &trans           &trans           &trans      &del_scrnSvr 0 DELETE
+&kp TAB         &kp EXCL       &kp AT         &kp LS(NUMBER_3)  &kp DOLLAR            &kp HASH                 &trans                 &kp LS(GREATER_THAN)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans      &trans
+&kp BSPC        &kp KP_DIVIDE  &kp ASTERISK   &kp MINUS         &kp PLUS              &kp PERCENT              &kp LG(LEFT_BRACKET)   &kp LS(LESS_THAN)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans      &trans
+&kp LEFT_SHIFT  &kp CARET      &kp AMPERSAND  &none             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LG(RIGHT_BRACKET)  &kp LS(KP_NUMBER_0)   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT  &trans
+&trans          &trans         &trans         &trans            &kp SPACE             &trans                   &trans                 &kp KP_ENTER          &kp SPACE        &trans           &trans           &kp EQUAL
             >;
 
             display-name = "NumPad";
