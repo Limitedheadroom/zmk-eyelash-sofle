@@ -215,7 +215,7 @@ layers:
   - Sft+3
   - $
   - '#'
-  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Sft+>
   - KP 7
   - KP 8
@@ -228,7 +228,7 @@ layers:
   - {t: '-', s: _}
   - +
   - '%'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+[', s: 'Gui+{'}
   - Sft+<
   - KP 4
   - KP 5
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+]', s: 'Gui+}'}
   - Sft+KP 0
   - KP 1
   - KP 2
