@@ -267,7 +267,7 @@
 &kp ESC  &trans     &trans     &trans     &trans     &trans    &mmv MOVE_UP     &trans     &trans         &trans    &trans         &trans        &Del_ejectAll 0 DELETE
 &trans   &trans     &trans     &trans     &trans     &trans    &mmv MOVE_DOWN   &kp PG_UP  &kp LA(LEFT)   &kp UP    &kp LA(RIGHT)  &kp LA(BSPC)  &kp BACKSPACE
 &kp F24  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &trans    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp LBRC      &kp RIGHT_BRACE
-&kp F24  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &mmv MOVE_RIGHT  &trans     &kp HOME       &none     &kp END        &none         &trans
+&kp F24  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &mmv MOVE_RIGHT  &kp HOME   &kp END        &trans    &trans         &none         &trans
 &trans   &trans     &trans     &trans     &trans     &trans    &mkp LCLK        &trans     &kp BACKSPACE  &trans    &trans         &trans
             >;
 
