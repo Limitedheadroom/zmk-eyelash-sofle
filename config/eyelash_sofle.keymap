@@ -251,11 +251,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE       &kp F1               &kp F2               &kp F3              &kp F4                   &kp F5          &kp UP_ARROW    &kp F6            &kp F7                  &kp F8              &kp F9                              &kp F10                            &kp F11
-&kp TILDE       &kp NUMBER_1         &kp NUMBER_2         &kp N3              &kp N4                   &kp N5          &kp DOWN_ARROW  &kp N6            &kp N7                  &kp N8              &kp N9                              &kp N0                             &kp F12
-&kp UNDERSCORE  &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT POUND  &mt LEFT_COMMAND DOLLAR  &kp PERCENT     &kp LEFT_ARROW  &kp CARET         &mt RIGHT_COMMAND AMPS  &mt RIGHT_ALT STAR  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &kp LS(PIPE)
-&trans          &kp LS(PLUS)         &kp MINUS            &kp EQUAL           &kp LS(LBRC)             &kp LS(RBRC)    &kp RIGHT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp SEMICOLON       &kp COLON                           &kp BACKSLASH                      &trans
-&kp C_MUTE      &trans               &trans               &trans              &trans                   &trans          &kp ENTER       &lt 4 LG(ENTER)   &trans                  &trans              &trans                              &trans
+&kp GRAVE   &kp F1               &kp F2               &kp F3              &kp F4                   &kp F5          &kp UP_ARROW    &kp F6            &kp F7                  &kp F8              &kp F9                              &kp F10                            &kp F11
+&kp TILDE   &kp NUMBER_1         &kp NUMBER_2         &kp N3              &kp N4                   &kp N5          &kp DOWN_ARROW  &kp N6            &kp N7                  &kp N8              &kp N9                              &kp N0                             &kp F12
+&trans      &mt LEFT_SHIFT EXCL  &mt LEFT_CONTROL AT  &mt LEFT_ALT POUND  &mt LEFT_COMMAND DOLLAR  &kp PERCENT     &kp LEFT_ARROW  &kp CARET         &mt RIGHT_COMMAND AMPS  &mt RIGHT_ALT STAR  &mt RIGHT_CONTROL LEFT_PARENTHESIS  &mt RIGHT_SHIFT RIGHT_PARENTHESIS  &kp LS(PIPE)
+&kp UNDER   &kp LS(PLUS)         &kp MINUS            &kp EQUAL           &kp LS(LBRC)             &kp LS(RBRC)    &kp RIGHT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET       &kp SEMICOLON       &kp COLON                           &kp BACKSLASH                      &trans
+&kp C_MUTE  &trans               &trans               &trans              &trans                   &trans          &kp ENTER       &lt 4 LG(ENTER)   &trans                  &trans              &trans                              &trans
             >;
 
             display-name = "SymNum";
