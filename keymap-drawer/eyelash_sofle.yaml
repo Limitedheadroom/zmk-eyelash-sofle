@@ -92,7 +92,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - F12
-  - _
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-option$$'}
@@ -105,7 +105,7 @@ layers:
   - {t: (, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - Sft+|
-  - {t: '$$mdi:transfer$$', type: trans}
+  - _
   - Sft++
   - {t: '-', s: _}
   - {t: '=', s: +}
